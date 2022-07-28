@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .text-style {
+        text-align: center;
+        line-height: 80px;
+        color: aliceblue;
+      }
+
+      .image-style {
+        width: 150px;
+        height: 100%;
+        margin-top: 25px;
+        margin-left: 42%;
+      }
+    </style>
+
+    <script type="text/javascript">
+      var s = 0;
+
+      function artir() {
+        deger = document.getElementById("sayi");
+        deger.value = s;
+        s++;
+      }
+    </script>
+  </head>
+
+  <body>
+    <img
+      class="image-style"
+      src="./images/image/logok-16072013122504.jpg"
+      alt="sadtek"
+    />
+
+    <ul class="flex-box text-style">
+      <button id="btn" style="border: 0px" class="box-one">
+        <li>
+          Açık Proje
+          <div id="show">0</div>
+        </li>
+      </button>
+      <button id="btn2" style="border: 0px" class="box-two">
+        <li>
+          Teklif Edildi
+          <div id="show2">0</div>
+        </li>
+      </button>
+      <button id="btn3" style="border: 0px" class="box-three">
+        <li>
+          Sipariş
+          <div id="show3">0</div>
+        </li>
+      </button>
+      <button id="btn4" style="border: 0px" class="box-four">
+        <li>
+          Teslimat Bekleniyor
+          <div id="show4">0</div>
+        </li>
+      </button>
+      <button id="btn5" style="border: 0px" class="box-five">
+        <li>
+          Faturalandırıldı
+          <div id="show5">0</div>
+        </li>
+      </button>
+      <button id="btn6" style="border: 0px" class="box-six">
+        <li>
+          İptal
+          <div id="show6">0</div>
+        </li>
+      </button>
+    </ul>
+
+    <script>
+      var btn = document.querySelector("#btn");
+      var btn2 = document.querySelector("#btn2");
+      var btn3 = document.querySelector("#btn3");
+      var btn4 = document.querySelector("#btn4");
+      var btn5 = document.querySelector("#btn5");
+      var btn6 = document.querySelector("#btn6");
+
+      var show = document.querySelector("#show");
+      var show2 = document.querySelector("#show2");
+      var show3 = document.querySelector("#show3");
+      var show4 = document.querySelector("#show4");
+      var show5 = document.querySelector("#show5");
+      var show6 = document.querySelector("#show6");
+
+      btn.onclick = function () {
+        var number = Number(show.innerHTML);
+        show.innerHTML = ++number;
+      };
+      btn2.onclick = function () {
+        var number = Number(show2.innerHTML);
+        show2.innerHTML = ++number;
+      };
+      btn3.onclick = function () {
+        var number = Number(show3.innerHTML);
+        show3.innerHTML = ++number;
+      };
+      btn4.onclick = function () {
+        var number = Number(show4.innerHTML);
+        show4.innerHTML = ++number;
+      };
+      btn5.onclick = function () {
+        var number = Number(show5.innerHTML);
+        show5.innerHTML = ++number;
+      };
+      btn6.onclick = function () {
+        var number = Number(show6.innerHTML);
+        show6.innerHTML = ++number;
+      };
+    </script>
+  </body>
+</html>
