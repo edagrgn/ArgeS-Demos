@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İptal</title>
+
+    <style>
+      .iptal-box {
+        flex: 1;
+        background: gold;
+        max-width: 12%;
+        padding: 5px;
+        height: 90px;
+        width: 70px;
+        margin: 1%;
+        margin-left: 150px;
+        flex-basis: 23%;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="color: black">İptal Edilenler :</h2>
+
+    <button class="iptal-box" id="btn6">
+      <div id="show6">0</div>
+    </button>
+
+    <script>
+      var btn6 = document.querySelector("#btn6");
+      var show6 = document.querySelector("#show6");
+
+      btn6.onclick = function () {
+        var number = Number(show6.innerHTML);
+        show6.innerHTML = ++number;
+      };
+    </script>
+  </body>
+</html>

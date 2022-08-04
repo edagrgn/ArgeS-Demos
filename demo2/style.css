@@ -1,0 +1,68 @@
+.flex-box {
+  padding: 0;
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  margin-left: 250px;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.box-two {
+  flex: 1;
+  background: MediumSeaGreen;
+  max-width: 12%;
+  padding: 5px;
+  height: 90px;
+  margin: 1%;
+  flex-basis: 23%;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.box-three {
+  flex: 1;
+  background: #ff0000;
+  max-width: 12%;
+  padding: 5px;
+  height: 90px;
+  margin: 1%;
+  flex-basis: 23%;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.box-four {
+  flex: 1;
+  background: deepskyblue;
+  max-width: 12%;
+  padding: 5px;
+  height: 90px;
+  margin: 1%;
+  flex-shrink: 1;
+  flex-basis: 23%;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.box-five {
+  flex: 1;
+  background: rgb(143, 88, 194);
+  max-width: 12%;
+  padding: 5px;
+  height: 90px;
+  margin: 1%;
+  flex-shrink: 1;
+  flex-basis: 23%;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.box-six {
+  flex: 1;
+  background: gold;
+  max-width: 12%;
+  padding: 5px;
+  height: 90px;
+  margin: 1%;
+  flex-shrink: 1;
+  flex-basis: 23%;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
